@@ -1,0 +1,58 @@
+Başlangıç dizi: [22, 27, 16, 2, 18, 6]
+
+27 ≥ 22 olduğu için yer değişimi yok.
+Sonuç: [22, 27, 16, 2, 18, 6]
+
+
+16 < 27 → 27 sağa kaydır
+Sonuç: [16, 22, 27, 2, 18, 6]
+
+2 < 27 → 27 kaydır
+Sonuç: [2, 16, 22, 27, 18, 6]
+
+18 < 27 → 27 kaydır
+Sonuç: [2, 16, 18, 22, 27, 6]
+
+
+6 < 27 → 27 kaydır
+Sonuç (tam sıralı): [2, 6, 16, 18, 22, 27]
+
+Sonuç: dizi [2, 6, 16, 18, 22, 27] oldu.
+
+
+
+Best case (dizi zaten sıralı): O(n) — her i için sadece 1 karşılaştırma.
+
+Average case: O(n^2) — ortalama olarak her eleman için yer değiştirmeler yapılır.
+
+Worst case (ters sıralı dizi): O(n^2) — her adımda uzun kaydırmalar olur.
+
+
+3) “18 sayısı hangi case’e girer?” 
+
+Sıralanmış dizi yukarıda: [2, 6, 16, 18, 22, 27]
+Burada 18 dizi içinde 4. eleman (orta yakını) — ne en başta ne de sonda. Verilen tanıma göre bu Average case kapsamına girer. Yani Average case.
+
+
+4) Selection Sort — [7,3,5,8,2,9,4,15,6] için ilk 4 adım 
+
+
+Başlangıç: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+Adım 1 
+En küçük değer = 2 (index 4)
+Sonuç: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+
+Adım 2
+En küçük = 3 (zaten index 1)
+Sonuç: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+
+Adım 3 
+En küçük = 4 (index 6)
+Sonuç: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+Adım 4 
+En küçük = 5 
+Sonuç: [2, 3, 4, 5, 7, 9, 8, 15, 6]
